@@ -1,9 +1,4 @@
-"""Program that identifies prime numbers or factors of composite numbers"""
-
-first_number = input("Give me a number: ")
-second_number = input("Give me another number: ")
-factor_string = ""
-factor_string_second = ""
+"""Functions that identify prime numbers, factors of composite numbers, LCM or HCF of two numbers"""
 
 def check_if_prime(number):
     """Function that checks if this number is a prime number. Returns True or False"""
@@ -40,44 +35,6 @@ def identify_hcf(first, second):
             return value
         
     return f"Sorry, but there are no common factors in these two numbers."
-
-if check_if_prime(first_number):
-    print("\nThe first number you gave me is a prime number.\n")
-
-elif not check_if_prime(first_number):
-    print("\nThe first number you gave me is not a prime number.")
-    factor_list_first = identify_factors(first_number)
-
-    for value in factor_list_first:
-        if value == factor_list_first[-1]:
-            factor_string += f"{value}."
-        else:
-            factor_string += f"{value}, "
-
-    print(f"Here are the factors of {first_number}: {factor_string}\n")
-
-if check_if_prime(second_number):
-    print("The second number you gave me is a prime number.\n")
-
-elif not check_if_prime(second_number):
-    print("The second number you gave me is not a prime number.")
-    factor_list_second = identify_factors(second_number)
-
-    for value in factor_list_second:
-        if value == factor_list_second[-1]:
-            factor_string_second += f"{value}."
-        else:
-            factor_string_second += f"{value}, "
-
-    print(f"Here are the factors of {second_number}: {factor_string_second}\n")
-
-hcf = identify_hcf(first_number, second_number)
-
-if type(hcf) == type(factor_string):
-    print(hcf)
-else:
-    print(f"The hcf of those two numbers is {hcf}")
-
 
 
 
