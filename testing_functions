@@ -1,6 +1,6 @@
 """Program to test the functions in primes.py"""
 
-import primes as p
+import functions as p
 
 first_number = input("Give me a number: ")
 second_number = input("Give me another number: ")

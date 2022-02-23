@@ -1,2 +1,0 @@
-This is my very first repository in GitHub.
-I am adding this text file because I am practicing the git commands in the Git Bash.
