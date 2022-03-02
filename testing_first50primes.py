@@ -1,7 +1,9 @@
-from functions import check_if_prime
 import csv
+from functions import check_if_prime
 
-with open(' s.csv') as f:
+filename = 'list_of_50_primes.csv'
+
+with open(filename) as f:
     reader = csv.reader(f)
     
     row = next(reader)
@@ -9,7 +11,8 @@ with open(' s.csv') as f:
     for value in row:
         number = int(value.strip())
         
-        if check_if_prime(number):
+        # If check_if_prime returns() 'True', then the number is a prime number; if it returns 'False', then it is not.
+        if check_if_prime(number):                                      
             print(f"{number} is prime.")
         
         else:
