@@ -72,6 +72,3 @@ class Maths():
                 return value
         
         return f"No LCM found."
-
-
-
